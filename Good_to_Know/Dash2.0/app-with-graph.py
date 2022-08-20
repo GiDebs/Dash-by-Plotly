@@ -1,12 +1,11 @@
-# If you prefer to run the code online instead of on your computer click:
-# https://github.com/Coding-with-Adam/Dash-by-Plotly#execute-code-in-browser
+# To understand the meaning oth the libraries CTRL + right click
 
 from dash import Dash, dcc, Output, Input  # pip install dash
 import dash_bootstrap_components as dbc    # pip install dash-bootstrap-components
-import plotly.express as px
+import plotly.express as px                # library that allows me to build graphs
 
 # incorporate data into app
-df = px.data.medals_long()
+df = px.data.medals_long() #data are coming from this function which is a built-in dataset for educational purposes in data library 
 
 # Build your components
 app = Dash(__name__, external_stylesheets=[dbc.themes.VAPOR])
